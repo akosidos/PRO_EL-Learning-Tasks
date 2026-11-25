@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6.4 Engage - Learning Task 6.2</title>
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            background: #ffffff;
+            display: grid;
+            place-items: center;
+        }
+
+        #boss_svg {
+            width: 300px;
+            height: 300px;
+            animation: pulse 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes pulse {
+            from { transform: scale(1.5); }
+            to   { transform: scale(0.5); }
+        }
+    </style>
+</head>
+<body>
+    <svg id="boss_svg" width="300" height="300" viewBox="0 0 180 180" role="img" aria-label="Angry circle boss">
+        <circle cx="90" cy="90" r="65" fill="#b71f58" stroke="#ff8aa9" stroke-width="4" />
+        
+        <path d="M48 59 L76 70 L72 81 L45 72 Z" fill="#210817" />
+        <path d="M104 70 L132 59 L135 72 L108 81 Z" fill="#210817" />
+        
+        <ellipse cx="65" cy="88" rx="9" ry="12" fill="#fff1f4" />
+        <ellipse cx="115" cy="88" rx="9" ry="12" fill="#fff1f4" />
+        
+        <circle cx="67" cy="90" r="4" fill="#210817" />
+        <circle cx="113" cy="90" r="4" fill="#210817" />
+
+        <path d="M53 116 Q90 141 127 116 L119 135 Q90 149 61 135 Z" fill="#210817" />
+        <path d="M75 123 L85 126 L81 136 Z M94 126 L104 123 L99 136 Z" fill="#fff1f4" />
+    </svg>
+</body>
+</html>
