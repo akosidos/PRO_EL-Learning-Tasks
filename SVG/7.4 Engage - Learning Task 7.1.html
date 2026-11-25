@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>7.4 Engage - Learning Task 7.1</title>
+        <style>
+        body { background: #ffffff; font-family: Arial, sans-serif; color: #222222; text-align: center; }
+        table { margin: auto; border-collapse: collapse; }
+        td { border: 1px solid #e0e0e0; padding: 10px; }
+        </style>
+
+    <script type="text/javascript">
+    window.addEventListener('load', eventWindowLoaded, false);
+        function eventWindowLoaded() {
+        canvasApp();
+        }
+
+    function canvasSupport () {
+        return !!document.createElement('canvas').getContext;
+    }
+
+    function canvasApp(){
+        if (!canvasSupport()) {
+        return;
+        }
+        drawScreen1();
+        drawScreen2();
+        drawScreen3();
+        drawScreen4();
+        drawScreen5();
+        drawScreen6();
+        drawScreen7();
+        drawScreen8();
+    }
+
+    function drawScreen1() {
+        var theCanvas = document.getElementById('canvas1');
+        var context = theCanvas.getContext('2d');
+        context.fillStyle = '#8b5a2b';
+        context.fillRect(20, 20, 160, 160);
+        context.fillStyle = '#4caf50';
+        context.fillRect(20, 20, 160, 40);
+        context.fillRect(20, 60, 20, 15);
+        context.fillRect(60, 60, 20, 15);
+        context.fillRect(100, 60, 20, 15);
+        context.fillRect(140, 60, 20, 15);
+        context.fillStyle = '#6b4423';
+        context.fillRect(50, 100, 15, 15);
+        context.fillRect(120, 90, 15, 15);
+        context.fillRect(90, 140, 15, 15);
+        context.fillRect(150, 150, 15, 15);
+    }
+
+    function drawScreen2() {
+        var theCanvas = document.getElementById('canvas2');
+        var context = theCanvas.getContext('2d');
+        context.fillStyle = '#3cb043';
+        context.fillRect(0, 0, 200, 200);
+        context.fillStyle = '#2e8b34';
+        context.fillRect(10, 10, 25, 25);
+        context.fillRect(150, 30, 25, 25);
+        context.fillRect(60, 160, 25, 25);
+        context.fillStyle = '#000000';
+        context.fillRect(40, 50, 40, 40);
+        context.fillRect(120, 50, 40, 40);
+        context.fillRect(80, 90, 40, 40);
+        context.fillRect(60, 110, 20, 60);
+        context.fillRect(120, 110, 20, 60);
+    }
+
+    function drawScreen3() {
+        var theCanvas = document.getElementById('canvas3');
+        var context = theCanvas.getContext('2d');
+        context.fillStyle = '#808080';
+        context.fillRect(0, 0, 200, 200);
+        context.fillStyle = '#6e6e6e';
+        context.fillRect(10, 20, 30, 30);
+        context.fillRect(140, 10, 40, 30);
+        context.fillRect(100, 150, 40, 30);
+        context.fillStyle = '#00e5ff';
+        context.fillRect(40, 60, 30, 30);
+        context.fillRect(110, 50, 30, 30);
+        context.fillRect(70, 110, 30, 30);
+        context.fillRect(140, 120, 30, 30);
+        context.fillStyle = '#b2ffff';
+        context.fillRect(45, 65, 10, 10);
+        context.fillRect(115, 55, 10, 10);
+        context.fillRect(75, 115, 10, 10);
+        context.fillRect(145, 125, 10, 10);
+    }
+
+    function drawScreen4() {
+        var theCanvas = document.getElementById('canvas4');
+        var context = theCanvas.getContext('2d');
+        context.fillStyle = '#ffffff';
+        context.fillRect(0, 0, 200, 200);
+        context.fillStyle = '#e53935';
+        context.fillRect(40, 60, 120, 110);
+        context.fillRect(60, 170, 80, 10);
+        context.fillStyle = '#ffcdd2';
+        context.fillRect(55, 75, 20, 20);
+        context.fillStyle = '#6b4423';
+        context.fillRect(95, 35, 12, 30);
+        context.fillStyle = '#4caf50';
+        context.fillRect(107, 35, 30, 15);
+    }
+
+    function drawScreen5() {
+        var theCanvas = document.getElementById('canvas5');
+        var context = theCanvas.getContext('2d');
+        context.fillStyle = '#ffffff';
+        context.fillRect(0, 0, 200, 200);
+        context.fillStyle = '#4caf50';
+        context.fillRect(0, 170, 200, 30);
+        context.fillStyle = '#6b4423';
+        context.fillRect(85, 100, 30, 70);
+        context.fillStyle = '#2e7d32';
+        context.fillRect(45, 40, 110, 70);
+        context.fillStyle = '#1b5e20';
+        context.fillRect(55, 50, 20, 20);
+        context.fillRect(110, 70, 20, 20);
+        context.fillRect(80, 85, 20, 20);
+    }
+
+    function drawScreen6() {
+        var theCanvas = document.getElementById('canvas6');
+        var context = theCanvas.getContext('2d');
+        context.fillStyle = '#d32f2f';
+        context.fillRect(30, 20, 140, 160);
+        context.fillStyle = '#f5f5f5';
+        context.fillRect(30, 75, 140, 50);
+        context.fillStyle = '#000000';
+        context.font = '36px _sans';
+        context.textAlign = 'center';
+        context.textBaseline = 'top';
+        context.fillText ("TNT", 100, 82);
+    }
+
+    function drawScreen7() {
+        var theCanvas = document.getElementById('canvas7');
+        var context = theCanvas.getContext('2d');
+        context.fillStyle = '#0d1b3d';
+        context.fillRect(0, 0, 200, 200);
+        context.fillStyle = '#ffffff';
+        context.fillRect(20, 25, 6, 6);
+        context.fillRect(60, 50, 6, 6);
+        context.fillRect(100, 20, 6, 6);
+        context.fillRect(150, 70, 6, 6);
+        context.fillRect(175, 25, 6, 6);
+        context.fillRect(30, 100, 6, 6);
+        context.fillRect(130, 100, 6, 6);
+        context.fillRect(80, 85, 6, 6);
+        context.fillStyle = '#f5f5dc';
+        context.fillRect(120, 30, 40, 40);
+        context.fillStyle = '#0d1b3d';
+        context.fillRect(135, 30, 25, 20);
+        context.fillStyle = '#4caf50';
+        context.fillRect(0, 150, 200, 20);
+        context.fillStyle = '#8b5a2b';
+        context.fillRect(0, 170, 200, 30);
+    }
+
+    function drawScreen8() {
+        var theCanvas = document.getElementById('canvas8');
+        var context = theCanvas.getContext('2d');
+        context.fillStyle = '#ffffff';
+        context.fillRect(0, 0, 200, 200);
+        context.lineCap = 'square';
+        context.strokeStyle = '#00e5ff';
+        context.lineWidth = 18;
+        context.beginPath();
+        context.moveTo(170, 30);
+        context.lineTo(80, 120);
+        context.stroke();
+        context.strokeStyle = '#8b5a2b';
+        context.lineWidth = 14;
+        context.beginPath();
+        context.moveTo(60, 140);
+        context.lineTo(30, 170);
+        context.stroke();
+        context.strokeStyle = '#5d4037';
+        context.lineWidth = 12;
+        context.beginPath();
+        context.moveTo(60, 100);
+        context.lineTo(100, 140);
+        context.stroke();
+    }
+    </script>
+    </head>
+    <body>
+    <h1>7.4 Engage - Learning Task 7.1</h1>
+        <table>
+        <tr>
+            <td><canvas id="canvas1" width="200" height="200">Your browser does not support HTML5 Canvas.</canvas><br>1. Grass Block</td>
+            <td><canvas id="canvas2" width="200" height="200">Your browser does not support HTML5 Canvas.</canvas><br>2. Creeper Face</td>
+            <td><canvas id="canvas3" width="200" height="200">Your browser does not support HTML5 Canvas.</canvas><br>3. Diamond Ore</td>
+            <td><canvas id="canvas4" width="200" height="200">Your browser does not support HTML5 Canvas.</canvas><br>4. Apple</td>
+        </tr>
+        <tr>
+            <td><canvas id="canvas5" width="200" height="200">Your browser does not support HTML5 Canvas.</canvas><br>5. Tree</td>
+            <td><canvas id="canvas6" width="200" height="200">Your browser does not support HTML5 Canvas.</canvas><br>6. TNT</td>
+            <td><canvas id="canvas7" width="200" height="200">Your browser does not support HTML5 Canvas.</canvas><br>7. Night Sky</td>
+            <td><canvas id="canvas8" width="200" height="200">Your browser does not support HTML5 Canvas.</canvas><br>8. Diamond Sword</td>
+        </tr>
+        </table>
+    </body>
+</html>
